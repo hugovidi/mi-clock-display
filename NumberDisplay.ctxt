@@ -1,8 +1,17 @@
 #BlueJ class context
-comment0.params=
-comment0.target=NumberDisplay()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ NumberDisplay\r\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment0.params=limitDisplay
+comment0.target=NumberDisplay(int)
+comment0.text=\r\n\ Constructor\ al\ cual\ se\ le\ itnroduce\ el\ limite\ del\ display\ y\ hace\ que\ el\ display\ se\ ponga\ a\ 0\r\n
+comment1.params=actualDisplay
+comment1.target=void\ setValue(int)
+comment1.text=\r\n\ Metodo\ setter\ que\ hace\ que\ el\ valor\ display\ se\ modifique\ por\ el\ introducido\r\n
+comment2.params=
+comment2.target=java.lang.String\ getDisplayValue()
+comment2.text=\r\n\ M\u00E9todo\ que\ devuelve\ el\ valor\ actual\ del\ display\ en\ forma\ de\ cadena\ de\ 2\ caracteres\r\n
+comment3.params=
+comment3.target=int\ getValue()
+comment3.text=\r\n\ M\u00E9todo\ que\ devuelve\ el\ valor\ actual\ del\ display\ como\ entero\ \r\n
+comment4.params=
+comment4.target=void\ increment()
+comment4.text=\r\n\ M\u00E9todo\ que\ incrementa\ en\ 1\ al\ display\ y\ lo\ hace\ volver\ al\ principio\ si\ alcanza\ el\ l\u00EDmite\r\n
+numComments=5
