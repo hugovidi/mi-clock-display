@@ -10,7 +10,7 @@ public class NumberDisplay
     // instance variables - replace the example below with your own
     private int display;
     private int totalLimitDisplay;
-    
+   
     
     /**
      * Constructor al cual se le itnroduce el limite del display y hace que el display se ponga a 0

@@ -19,18 +19,35 @@ public class ClockDisplay
     public ClockDisplay()
     {
         // initialise instance variables
-        horaActual = "00:00";
+       minuto = new NumberDisplay(59);
+       hora = new NumberDisplay(23);
+       minuto.setValue(00);
+       hora.setValue(00);
+       horaActual = "00:00";
     }
 
     
       /**
      * Constructor for objects of class ClockDisplay
      */
-    public ClockDisplay(int minuto, int hora)
+    public ClockDisplay(int minutos, int horas)
     {
-        // initialise instance variables
-        
+       
+       minuto = new NumberDisplay(59);
+       hora = new NumberDisplay(23);
+       minuto.setValue(minutos);
+       hora.setValue(horas);
+       horaActual = hora + ":" + minuto;
     }
-}
+    
+    
+    public void setTime(int horas,int minutos)
+    {
+    horaActual = horas + ":" + minutos;
+    }
+
+
+}  
+
     
    
