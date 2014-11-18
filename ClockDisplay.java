@@ -37,16 +37,42 @@ public class ClockDisplay
        hora = new NumberDisplay(23);
        minuto.setValue(minutos);
        hora.setValue(horas);
-       horaActual = hora + ":" + minuto;
+       horaActual = hora.getDisplayValue() + ":" + minuto.getDisplayValue();
     }
     
     
     public void setTime(int horas,int minutos)
     {
-    horaActual = horas + ":" + minutos;
+     horaActual = horas + ":" + minutos;
+     hora.setValue(horas);
+     minuto.setValue(minutos);
+     
     }
+    
+    
+    public String getTime()
+    {
+     String stHora = "";
+     stHora = hora.getDisplayValue() + ":" + minuto.getDisplayValue();
+     return stHora;
+    }
+    
+    public void timeTick()
+    {
+     minuto.setIncrement();
+     horaActual = hora.getDisplayValue() + ":" + minuto.getDisplayValue();
+    }
+    
+    
+    
+    
+   
+    
 
-
+    
+    
+    
+    
 }  
 
     

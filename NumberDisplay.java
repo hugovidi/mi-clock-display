@@ -60,7 +60,7 @@ public class NumberDisplay
    /**
     * Método que incrementa en 1 al display y lo hace volver al principio si alcanza el límite
     */
-   public void increment()
+   public void setIncrement()
    {
        if(display < totalLimitDisplay)
        {
