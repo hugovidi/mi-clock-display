@@ -20,10 +20,10 @@ public class ClockDisplay
     {
         // initialise instance variables
        minuto = new NumberDisplay(60);
-       hora = new NumberDisplay(13);
+       hora = new NumberDisplay(24);
        minuto.setValue(00);
        hora.setValue(00);
-       horaActual = "00:00";
+       horaActual = "00:00 am";
     }
 
     
@@ -34,10 +34,17 @@ public class ClockDisplay
     {
        
        minuto = new NumberDisplay(60);
-       hora = new NumberDisplay(13);
+       hora = new NumberDisplay(24);
        minuto.setValue(minutos);
        hora.setValue(horas);
-       horaActual = hora.getDisplayValue() + ":" + minuto.getDisplayValue();
+       if (hora.getValue() >=0 & hora.getValue() < 13 )
+       {
+           horaActual = hora.getDisplayValue() + ":" + minuto.getDisplayValue() + "am";
+       }
+       else
+       {
+           horaActual = hora.getDisplayValue() + ":" + minuto.getDisplayValue() + "pm";
+       }
     }
     
     
