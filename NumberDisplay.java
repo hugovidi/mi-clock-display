@@ -26,8 +26,10 @@ public class NumberDisplay
     */
    public void setValue(int actualDisplay)
    {
+       if (display > 0 && display < totalLimitDisplay)
+       {
        display = actualDisplay;
-       
+    }
    }
    
    /**
